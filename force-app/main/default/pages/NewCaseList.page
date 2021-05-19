@@ -1,0 +1,24 @@
+<apex:page controller="NewCaseListController" sidebar="false">
+      
+           <!-- Contacts List -->
+           
+                 <apex:repeat var="case" value="{!NewCases}" >
+                
+                
+                            <li>
+                              
+                              <apex:outputLink value="{/!case.id}">{!case.id}</apex:outputLink>
+                                                                   - {!case.CaseNumber}
+                                                                   - {!case.Account.Name}
+                                                       <!-- <apex:outputText value="{! ct.id}"/><br/>
+                                                        <apex:outputText value="{! ct.casenumber}"/><br/>
+                                     
+                                                        <apex:outputText value="{! ct.status}"/><br/>
+                                                         -->
+                             
+                             
+                           </li> 
+                 </apex:repeat>
+            
+       
+</apex:page>

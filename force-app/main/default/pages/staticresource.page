@@ -1,0 +1,2 @@
+<apex:page standardcontroller="case" showHeader="False" Action="{!URLFOR($Resource.crmadd)}">
+</apex:page>
